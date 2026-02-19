@@ -1,0 +1,18 @@
+VIRGINIA CLASS PROPULSION & SYSTEMS (RESTRICTED)
+
+1. PROPULSION TRAIN
+The S9G reactor powers the main propulsion unit. 
+- In "ultra-quiet" rigging, the main seawater pumps are secured, and flow is maintained by natural circulation (convection) up to ~30% power.
+- The propulsor is a "pump-jet" design, shrouded to reduce blade rate tonals.
+
+2. HIGH PRESSURE AIR (HP AIR)
+The HP Air system stores air at 4500 PSI in banks located in the main ballast tanks.
+- Uses: Emergency Blow, Torpedo Launch, Hydraulic Accumulator charge.
+- Leak Isolation: Use the "Zone Isolation Valves" (frame 22, 55, 90). 
+- If pressure drops below 2000 PSI, the "Low Pressure Blow" capability is compromised.
+
+3. FORWARD TRIM SYSTEM
+The Forward Trim Tank (FTT) manages pitch stability.
+- Capacity: 15,000 lbs seawater.
+- Vent Valve Failsafe: The vent is spring-loaded shut. 
+- Troubleshooting FTT: If FTT pump cavitates, check the tank level indicators (TLI). Air binding in the suction header is common during high sea states. Manual bleed valve is located above the pump stator.

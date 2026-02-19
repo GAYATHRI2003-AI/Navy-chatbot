@@ -1,0 +1,114 @@
+{
+  "submarines": {
+    "Kalvari-class": {
+      "displacement": {
+        "value": 1775,
+        "unit": "tons",
+        "tolerance": 50
+      },
+      "length": {
+        "value": 67.5,
+        "unit": "meters",
+        "tolerance": 1.0
+      },
+      "max_depth": {
+        "value": 350,
+        "unit": "meters",
+        "tolerance": 20
+      },
+      "speed_submerged": {
+        "value": 20,
+        "unit": "knots",
+        "tolerance": 2
+      },
+      "crew": {
+        "value": 43,
+        "unit": "personnel",
+        "tolerance": 5
+      },
+      "propulsion": "Diesel-Electric with AIP"
+    },
+    "Arihant-class": {
+      "displacement": {
+        "value": 6000,
+        "unit": "tons",
+        "tolerance": 200
+      },
+      "length": {
+        "value": 111,
+        "unit": "meters",
+        "tolerance": 2
+      },
+      "max_depth": {
+        "value": 300,
+        "unit": "meters",
+        "tolerance": 20
+      },
+      "propulsion": "Nuclear PWR",
+      "classification": "SSBN"
+    }
+  },
+  "weapons": {
+    "Varunastra": {
+      "type": "Heavy Weight Torpedo",
+      "range": {
+        "value": 40,
+        "unit": "km",
+        "tolerance": 5
+      },
+      "speed": {
+        "value": 40,
+        "unit": "knots",
+        "tolerance": 3
+      },
+      "warhead": {
+        "value": 250,
+        "unit": "kg",
+        "tolerance": 10
+      }
+    },
+    "Brahmos": {
+      "type": "Supersonic Cruise Missile",
+      "range": {
+        "value": 290,
+        "unit": "km",
+        "tolerance": 10
+      },
+      "speed": {
+        "value": 2.8,
+        "unit": "Mach",
+        "tolerance": 0.2
+      }
+    }
+  },
+  "naval_bases": {
+    "INS Kadamba": {
+      "location": "Karwar",
+      "coordinates": {
+        "lat": 14.8,
+        "lon": 74.1
+      },
+      "fleet": "Western Naval Command",
+      "type": "Strategic Tier-1"
+    },
+    "INS Varsha": {
+      "location": "Rambilli (Visakhapatnam)",
+      "fleet": "Eastern Naval Command",
+      "type": "Nuclear Submarine Base"
+    }
+  },
+  "maritime_law": {
+    "territorial_waters": {
+      "value": 12,
+      "unit": "nautical miles"
+    },
+    "contiguous_zone": {
+      "value": 24,
+      "unit": "nautical miles"
+    },
+    "eez": {
+      "value": 200,
+      "unit": "nautical miles"
+    }
+  }
+}

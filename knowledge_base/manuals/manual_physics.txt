@@ -1,0 +1,29 @@
+REACTIVE PHYSICS & ENVIRONMENTAL ACOUSTICS MANUAL (VOL 1)
+
+1. THERMOCLINES AND SHADOW ZONES
+A thermocline is a distinct layer in a large body of fluid in which temperature changes more rapidly with depth than it does in the layers above or below. In submarine warfare, the thermocline acts as a "sonic mirror." 
+- Above the layer: Sound tends to refract upward (surface duct).
+- Below the layer: Sound refracts downward.
+- The interface creates a "Shadow Zone" where hull-mounted mid-frequency sonars cannot detect targets. 
+TACTIC: To remain undetected by a surface destroyer (DDG), position the submarine 50ft below the calculated layer depth.
+
+2. CAVITATION INCEPTION
+Cavitation occurs when the pressure on the back of the propeller blade drops below the vapor pressure of water, forming bubbles that collapse noisily.
+- Inception Speed varies with depth.
+- Formula Aproximation: V_cav = 1.2 * sqrt(Depth_in_feet).
+- At periscope depth (60ft), cavitation may begin at 8 knots.
+- At deep test depth (>800ft), speeds of 25+ knots may be sustained without cavitation.
+
+3. PRESSURE HULL INTEGRITY (SUBSAFE)
+The pressure hull is a high-yield HY-80 or HY-100 steel cylinder. 
+- "Circle Mike" is the emergency command for hull breach. 
+- At depths exceeding 500ft, seawater ingress pressure creates specific challenges.
+- A 2-inch flooding casualty at 800ft allows ~2000 gallons per minute (GPM) ingress.
+- Immediate Actions: High-pressure air blow (Emergency Main Ballast Tank Blow) is the only method to overcome negative buoyancy if propulsion is lost.
+
+4. HYDROSTATIC LAWS
+- PASCAL'S LAW: A change in pressure at any point in an enclosed fluid at rest is transmitted undiminished to all points in the fluid. 
+- Formula: Delta P = rho * g * (Delta h). 
+- Application: This law is the basis for submarine hydraulic systems, including the steering gear and diving plane actuators. If a leak exists in the hydraulic header, pressure will drop globally across the branch, as per Pascal's Principle.
+- ARCHIMEDES' PRINCIPLE: Any object, wholly or partially immersed in a fluid, is buoyed up by a force equal to the weight of the fluid displaced by the object.
+- SUBMARINE APPLICATION: To dive, the submarine increases its weight by flooding main ballast tanks (MBT) until weight > buoyant force. To surface, compressed air "blows" the water out.

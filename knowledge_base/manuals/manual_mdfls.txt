@@ -1,0 +1,23 @@
+### MDFLS: Multimodal Defense Sonar Dataset Memory
+The MDFLS dataset provides high-fidelity baseline data for identifying man-made objects in tactical sonar feeds.
+
+#### Scenarios & Tactical Significance:
+- **Watertank**: Baseline detection signatures in controlled acoustic environments.
+- **Turntable**: 360-degree yaw rotation profiles. Used for identifying "opposite troop" hulls and equipment signatures from any approach angle.
+- **Flooded Quarry**: High-clutter, "murky water" conditions. Used to train RAG systems to distinguish between natural debris and tactical threats.
+
+#### Acoustic Material Profiles:
+1. **Pipes (Man-made)**:
+   - **Visual Signature**: Long, linear geometry, often with high-intensity specular highlights.
+   - **Acoustic Profile**: High-intensity backscatter with frequency-dependent scattering.
+2. **Metal Buckets (Foreign Equipment Proxy)**:
+   - **Visual Signature**: Circular or cylindrical geometry.
+   - **Acoustic Profile**: Strong secondary reflections due to internal resonance of the metallic cavity.
+3. **Tires (Debris Proxy)**:
+   - **Visual Signature**: Toroidal or circular with low-intensity "soft" backscatter compared to metal.
+   - **Acoustic Profile**: Diffuse scattering; used to calibrate "false positive" filters for sonar operators.
+
+#### Identification Logic (Instruction):
+- **Condition**: "High-intensity backscatter with a circular geometry."
+- **Analysis**: Circular geometry indicates a likely man-made artifact or metallic container. High-intensity backscatter suggests high acoustic impedance (likely metallic).
+- **Classification**: Possible metal equipment box or proxy bucket. Monitor for secondary resonance tonals.

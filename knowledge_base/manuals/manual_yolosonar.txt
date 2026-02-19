@@ -1,0 +1,25 @@
+### RESEARCH PAPER: YOLO-SONAR (2025)
+**Title**: Marine object detection in forward-looking sonar images via semantic-spatial feature enhancement.
+**Publication**: Frontiers in Marine Science, Feb 13, 2025.
+
+#### **Abstract & Product Utility**:
+Proprietary architecture for Forward-Looking Sonar (FLS) imagery. Solves the "Small Object" and "Seabed Clutter" problems.
+
+#### **Core Architectural Modules**:
+1. **Competitive Coordinate Attention Mechanism (CCAM)**:
+   - **Tactical Use**: Filters out seabed reverberation (noise) by competing semantic vs spatial features.
+2. **Spatial Group Enhance Attention Mechanism (SGEAM)**:
+   - **Tactical Use**: Improves localization accuracy for diverse object categories by grouping input features.
+3. **Context Feature Extraction Module (CFEM)**:
+   - **Tactical Use**: Specifically for identifying tiny targets (bottles, propellers) by integrating shallow and deep features.
+4. **Wise-IoUv3 Loss Function**:
+   - **Tactical Use**: Stabilizes training against class imbalance (e.g., more "seabed" than "victim").
+
+#### **Benchmark Performance**:
+- **MDFLS Dataset**: 81.96% mAP (7.65% improvement).
+- **WHFLS Dataset**: 82.30% mAP (12.89% improvement).
+
+#### **Tactical Analysis Protocols**:
+- **Identify Small Objects**: Use CFEM logic. Shallow contextual features must be mapped to deep regions to find "tiny" backscatter peaks.
+- **Filter Seabed Noise**: Apply CCAM competition. If a signal is high spatial but low semantic, it is likely static seabed clutter.
+- **Object Localization**: SGEAM grouping. Compare global vs local features to finalize bounding box coordinates.

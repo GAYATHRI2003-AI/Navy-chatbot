@@ -1,0 +1,21 @@
+### DeepShip: Underwater Acoustic Benchmark Dataset
+DeepShip is a high-fidelity dataset for the training and evaluation of underwater acoustic classification algorithms.
+
+#### Dataset Characteristics:
+- **Environment**: Recorded in real-world sea conditions (Strait of Georgia delta node) across different seasons.
+- **Noise Profile**: Contains natural background noise, marine mammal vocalizations, and human-initiated activity noise.
+- **Duration**: 47 hours and 04 minutes of recordings.
+- **Scope**: 265 different ships belonging to four major classes.
+- **Date Range**: May 2, 2016, to October 4, 2018.
+
+#### Target Classes:
+1. **Cargo Ship**: General freight vessels.
+2. **Passenger Ship**: Ferries and cruise vessels.
+3. **Oil Tanker**: Bulk liquid transport.
+4. **Tug**: Maneuvering vessels.
+
+#### Predictive Mechanism:
+Predicting ship class from underwater sound involves:
+1. **Feature Extraction**: Mel-Frequency Cepstral Coefficients (MFCCs) or Mel-Spectrograms to visualize the acoustic signature.
+2. **Signature Recognition**: Convolutional Neural Networks (CNNs) are typically used to identify "blade rate" (propeller speed) and "engine tonals" (specific frequency peaks) which act as fingerprints for each ship class.
+3. **Acoustic Fingerprinting**: Matching the incoming signal against the DeepShip database to identify engine characteristics.
